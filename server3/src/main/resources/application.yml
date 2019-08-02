@@ -1,0 +1,15 @@
+server:
+  port: 8759
+
+eureka:
+  instance:
+    hostname: localhost3
+    prefer-ip-address: true   #访问路径可以显示IP地址
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost2:8760/eureka/,http://localhost:8761/eureka/
+spring:
+  application:
+    name: eureka-server
