@@ -20,7 +20,8 @@ public class ClientApplication {
 	 * EurekaServer 服务提供者1
 	 * pq
 	 * */
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		SpringApplication.run(ClientApplication.class, args);
 	}
 
